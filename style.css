@@ -1,0 +1,138 @@
+/* Custom Fonts */
+
+@font-face {
+  font-family: "Young Serif Regular";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit Regular";
+  src: url(./assets/fonts/outfit/static/Outfit-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit SemiBold";
+  src: url(./assets/fonts/outfit/static/Outfit-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit Bold";
+  src: url(./assets/fonts/outfit/static/Outfit-Bold.ttf) format("truetype");
+}
+
+/* Custom Colors */
+
+:root {
+  /* Rose */
+
+  --rose-800: #7a284e;
+  --rose-50: #fff7fb;
+
+  /* Stone */
+
+  --stone-900: #312e2c;
+  --stone-600: #5f564d;
+  --stone-150: #e3ddd7;
+  --stone-100: #e3ddd7;
+  /* Brown */
+
+  --brown-800: #854632;
+
+  /* White */
+
+  --white: #ffffff;
+}
+
+/* Text Utility Classes */
+
+.text-preset-1 {
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-family: "Young Serif Regular", serif;
+}
+
+.text-preset-2 {
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-family: "Young Serif Regular", serif;
+}
+
+.text-preset-3 {
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-family: "Outfit Semibold", serif;
+}
+
+.text-preset-4 {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-family: "Outfit Regular", serif;
+}
+
+.text-preset-5 {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-family: "Outfit Bold", serif;
+}
+
+/* Element Spacing */
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+/* General */
+
+main {
+  padding: 40px 32px;
+}
+
+section:not(:last-of-type) {
+  margin-bottom: 32px;
+}
+
+/* Heading section */
+
+.page-heading {
+  margin-bottom: 24px;
+}
+
+/* Preparation section */
+
+.preparation-section {
+  padding: 24px;
+  border-radius: 12px;
+  background-color: var(--rose-50);
+}
+
+.preparation-title {
+  margin-bottom: 16px;
+  color: var(--rose-800);
+}
+
+.preparation-list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.preparation-list-item:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.styled-line {
+  border: 1px solid var(--stone-150);
+  margin-top: 0;
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .wrapper > * {
+    max-width: 770px;
+    margin: 0 auto;
+  }
+}
