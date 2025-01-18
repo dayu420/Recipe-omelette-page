@@ -108,6 +108,7 @@ section:not(:last-of-type) {
   padding: 24px;
   border-radius: 12px;
   background-color: var(--rose-50);
+  color: var(--stone-600);
 }
 
 .preparation-title {
@@ -116,18 +117,63 @@ section:not(:last-of-type) {
 }
 
 .preparation-list {
+  list-style: none;
   padding-left: 20px;
   margin: 0;
+}
+
+.preparation-list-item {
+  position: relative;
+  margin-left: 20px;
+}
+
+.preparation-list-item::before {
+  content: "•";
+  color: var(--brown-800);
+  font-size: 1.8em;
+  position: absolute;
+  left: -30px;
 }
 
 .preparation-list-item:not(:last-of-type) {
   margin-bottom: 8px;
 }
 
+/* Ingredients section */
+
+.ingredients-title {
+  margin-bottom: 24px;
+  color: var(--brown-800);
+}
+
+.ingredients-list {
+  list-style: none;
+  padding-left: 20px;
+  color: var(--stone-600);
+}
+
+.ingredients-list-item {
+  position: relative;
+  margin-left: 20px; /* Space for the custom bullet */
+}
+
+.ingredients-list-item::before {
+  content: "•";
+  color: var(--brown-800);
+  font-size: 1.8em;
+  position: absolute;
+  left: -30px;
+}
+.ingredients-list-item:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+/* Hr line */
+
 .styled-line {
   border: 1px solid var(--stone-150);
   margin-top: 0;
-  width: 90%;
+  /* width: 95%; */
 }
 
 @media (min-width: 768px) {
