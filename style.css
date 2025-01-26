@@ -57,6 +57,7 @@
   line-height: 100%;
   letter-spacing: 0px;
   font-family: "Young Serif Regular", serif;
+  color: var(--brown-800);
 }
 
 .text-preset-3 {
@@ -86,7 +87,24 @@
   margin-bottom: 32px;
 }
 
-/* General */
+/* Page wrapper */
+.wrapper {
+  padding: 64px 76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--stone-100);
+  min-height: 250vh;
+}
+
+.recipe-card {
+  /* margin-top: 150px; */
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 
 main {
   padding: 40px 32px;
@@ -97,11 +115,17 @@ section:not(:last-of-type) {
 }
 
 /* Heading section */
-
+/* header img {
+  border-radius: 12px;
+} */
 .page-heading {
+  color: var(--stone-900);
   margin-bottom: 24px;
 }
 
+.recipe-description {
+  color: var(--stone-600);
+}
 /* Preparation section */
 
 .preparation-section {
@@ -148,13 +172,13 @@ section:not(:last-of-type) {
 
 .ingredients-list {
   list-style: none;
-  padding-left: 20px;
+  list-style-position: inside;
   color: var(--stone-600);
 }
 
 .ingredients-list-item {
   position: relative;
-  margin-left: 20px; /* Space for the custom bullet */
+  margin-left: 20px;
 }
 
 .ingredients-list-item::before {
@@ -164,8 +188,64 @@ section:not(:last-of-type) {
   position: absolute;
   left: -30px;
 }
+
 .ingredients-list-item:not(:last-of-type) {
   margin-bottom: 8px;
+}
+
+/* Instructions section */
+
+.instructions-list {
+  color: var(--stone-600);
+  list-style-position: outside;
+}
+
+.instructions-list-item::marker {
+  color: var(--brown-800);
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-family: "Outfit Bold", serif;
+}
+
+.instructions-list-item {
+  padding-left: 16px;
+}
+
+/* Nutrition section */
+
+.nutrition-table {
+  width: 100%;
+  padding: 0 32px;
+  /* border-collapse: collapse; */
+  border-spacing: 0 10px;
+}
+
+.nutrition-table-data {
+  text-align: left;
+  /* padding-left: 25px; */
+  color: var(--stone-600);
+}
+
+.nutrition-table-description {
+  margin: 24px 0;
+  color: var(--stone-600);
+}
+
+.nutrition-table-data:nth-child(even) {
+  margin-left: 16px;
+  color: var(--brown-800);
+}
+
+/* Page footer */
+
+.page-footer {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-family: "Outfit Regular", serif;
 }
 
 /* Hr line */
